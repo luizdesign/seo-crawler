@@ -1,0 +1,30 @@
+{
+  "name": "seo-crawler",
+  "version": "0.0.1",
+  "description": "Project to crawler a site to get the main seo properties from source code",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizdesign/seo-crawler.git"
+  },
+  "keywords": [
+    "seo",
+    "crawler"
+  ],
+  "bin": {
+    "seo-crawler": "./bin/crawler.js"
+  },
+  "author": "Luiz Kota <luiz.zk@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luizdesign/seo-crawler/issues"
+  },
+  "homepage": "https://github.com/luizdesign/seo-crawler#readme",
+  "dependencies": {
+    "puppeteer": "^1.19.0",
+    "shell-arguments": "^1.2.3"
+  }
+}
