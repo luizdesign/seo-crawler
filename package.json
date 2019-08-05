@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/luizdesign/seo-crawler#readme",
   "dependencies": {
+    "commander": "^2.20.0",
     "puppeteer": "^1.19.0",
     "shell-arguments": "^1.2.3"
   }
