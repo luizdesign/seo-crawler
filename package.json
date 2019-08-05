@@ -4,7 +4,8 @@
   "description": "Project to crawler a site to get the main seo properties from source code",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "npx git-cz"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,8 @@
     "commander": "^2.20.0",
     "puppeteer": "^1.19.0",
     "shell-arguments": "^1.2.3"
+  },
+  "devDependencies": {
+    "commitizen": "^4.0.3"
   }
 }
