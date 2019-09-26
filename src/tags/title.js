@@ -1,10 +1,10 @@
 module.exports = {
-    extract: function extractTitle() {
-        return {
-            'title': {
-                tag: 'title',
-                content: document.title,
-            },
-        };
-    },
+  extract: function extractTitle() {
+    return {
+      title: {
+        tag: 'title',
+        content: document.title,
+      },
+    };
+  },
 };
