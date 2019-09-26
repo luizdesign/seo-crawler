@@ -1,3 +1,5 @@
+/* global extractMetatag, extractTitle, extractLinkTag, extractHyperlink */
+
 const puppeteer = require('puppeteer');
 const Meta = require('./tags/meta');
 const Title = require('./tags/title');
@@ -5,42 +7,42 @@ const Link = require('./tags/link');
 const Hyperlink = require('./tags/hyperlink');
 
 class Crawler {
-    constructor (options) {
-        this.options = options;
-    }
+  constructor(options) {
+    this.options = options;
+  }
 
-    init () {
-        this.access(this.options.entrypoint);
-    }
+  init() {
+    this.access();
+  }
 
-    async access (url) {
-        const browser = await puppeteer.launch({
-            headless: true,
-        });
-        const page = await browser.newPage();
+  async access() {
+    const browser = await puppeteer.launch({
+      headless: true,
+    });
+    const page = await browser.newPage();
 
-        await page.goto(url);
-        await page.addScriptTag({
-            content: `${Meta.extract} ${Title.extract} ${Link.extract} ${Hyperlink.extract}`,
-        });
+    await page.goto(this.options.entrypoint);
+    await page.addScriptTag({
+      content: `${Meta.extract} ${Title.extract} ${Link.extract} ${Hyperlink.extract}`,
+    });
 
-        let metadata = await page.evaluate(
-            async () => {
-                const tags = [];
+    const metadata = await page.evaluate(
+      async () => {
+        const tags = [];
 
-                tags.push(extractMetatag());
-                tags.push(extractTitle());
-                tags.push(extractLinkTag());
-                tags.push(extractHyperlink());
+        tags.push(extractMetatag());
+        tags.push(extractTitle());
+        tags.push(extractLinkTag());
+        tags.push(extractHyperlink());
 
-                return tags;
-            }
-        );
+        return tags;
+      },
+    );
 
-        console.log(metadata);
-        
-        await browser.close();
-    }
+    console.log(metadata);
+
+    await browser.close();
+  }
 }
 
 module.exports = Crawler;
