@@ -35,3 +35,13 @@ Access the [commitizen documentation here](https://github.com/commitizen/cz-cli)
 
 - Check the [issues](https://github.com/luizdesign/seo-crawler/issues) to ensure that there is not someone already working on it
 - Check our [contribution guide](https://github.com/luizdesign/seo-crawler/blob/master/CONTRIBUTING.MD)
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+| [<img src="https://avatars0.githubusercontent.com/u/2933509?v=4" width="100px;"/><br /><sub><b>Luiz Kota</b></sub>](https://github.com/luizdesign)<br />[💻](https://github.com/catho/Spalatum/commits?author=luizdesign "Code") [📖](https://github.com/catho/Spalatum/commits?author=luizdesign "Documentation") [👀](#review-luizdesign "Reviewed Pull Requests") 
+| :---: | :---: | :---: | :---: | :---: | :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
