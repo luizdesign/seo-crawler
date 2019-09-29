@@ -1,0 +1,24 @@
+{
+  "projectName": "Spalatum",
+  "projectOwner": "catho",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "luizdesign",
+      "name": "Luiz Kota",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/2933509?v=4",
+      "profile": "https://github.com/luizdesign",
+      "contributions": [
+        "code",
+        "doc",
+        "review"
+      ]
+    }
+  ]
+}
